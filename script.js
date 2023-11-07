@@ -1,7 +1,8 @@
 console.log("Hello Potichat");
 let score = 0
+let nbMotsProposes = 0
 
-function afficherResultat(score, nbMotsProposes) {
+function afficherResultat() {
 	//affichage du score et résultat du jeu
 	console.log("votre score est de " + score + "sur" + nbMotsProposes)
 }
@@ -15,7 +16,6 @@ function choisirPhrasesOuMots() {
 	return choix
 }
 function lancerBoucleDeJeu(listePropositions) {
-
 	for (let i = 0; i < listePropositions.length; i++) {
 		motUtilisateur = prompt("Entrez le mot : " + listePropositions[i])
 		// calcule du score
@@ -23,7 +23,6 @@ function lancerBoucleDeJeu(listePropositions) {
 			score++
 			console.log("Bravo humain, maintenant tu donne le pâtépoulet!")
 		} else {
-			score--
 			console.log("Tu n'es pas doué humain, maintenant donne quand même le pâtépoulet.")
 		}
 
@@ -35,11 +34,9 @@ function lancerBoucleDeJeu(listePropositions) {
 
 function lancerJeu() {
 	let choix = choisirPhrasesOuMots()
-	let score = 0
-	let nbMotsProposes = 0
-
+	
 	if (choix === "mots") {
-		lancerBoucleDeJeu(listeMots)
+		score = lancerBoucleDeJeu(listeMots)
 		nbMotsProposes = listeMots.length
 	} else {
 		lancerBoucleDeJeu(listePhrases)
@@ -50,6 +47,10 @@ function lancerJeu() {
 	afficherResultat(score, nbMotsProposes)
 }
 
-/*Lance le jeu de clavier*/
+//Lance le jeu de clavier
 
 lancerJeu()
+
+let baliseZoneProposition = document.getElementById("zoneProposition")
+console.log(baliseZoneProposition)
+console.log(baliseZoneProposition.clientHeight)
