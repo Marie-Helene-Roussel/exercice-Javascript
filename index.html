@@ -16,29 +16,50 @@
     </header>
     <div id="zoneJeu">
         <main>
+            <div id="modale" class="modale">
+                <div class="modaleContent">
+                    <h2 class="title_clavier">Le jeu du clavier </h2>
+                    <p class="present_jeu">Ce petit jeu pour apprendre à taper au clavier, pour les fans de Potichats!
+                        tu vas pouvoir choisir ton mode de jeu </p>
+                    <div class="zoneOptions">
+                        <p>Choisissez votre option de jeu.</p>
+                        <div class="optionSource">
+                            <input type="radio" name="optionSource" id="mots" value="1" checked>
+                            <label for="mots">Mots</label>
+                            <input type="radio" name="optionSource" id="phrases" value="2">
+                            <label for="phrases">Phrases</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <h2 class="title_clavier">Le jeu du clavier </h2>
                 <p class="present_jeu">Ce petit jeu pour apprendre à taper au clavier, pour les fans de Potichats! </p>
             </div>
-            <form id="zoneProposition" method="get" action="#">
-                
-                <label for="motTape" id="motPropose" >Pâtépoulet</label>
+            <div id="zoneProposition" method="get" action="#">
+                <!-- Pour mettre les mots et les taper-->
+                <label for="motTape" id="motPropose"></label>
                 <input type="text" id="motTape" required="">
+                <button id="boutonValiderMot">Valider</button>
+                <div class="zoneScore">
+                    Votre score : <span>0</span>
+                    <div id="phraseAffiche"></div>
+                </div>
+            </div>
 
-            </form>
 
         </main>
 
     </div>
     <footer>
-        <p> Bravo, maintenant donnez le pâtépoulet à votre potichat!! </p>
+
     </footer>
 
 
 
     <script src="config.js"></script>
     <script src="script.js"></script>
-
+    <script src="main.js"></script>
 
 </body>
 

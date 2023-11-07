@@ -109,6 +109,26 @@ main {
 .present_jeu{
 	padding: 5%;
 }
+#boutonValiderMot{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	border: 1px solid #b92ecc ;
+	background-color: #cc4ddd;
+	color: #381243;
+	font-weight: 600;
+	width: 20%;
+	height: 30px;
+	border-radius: 60px;
+	box-shadow: 6px 3px 5px 3px #ca49db;
+}
+
+.zoneScore{
+	position: relative;
+	top: 25px;
+}
 
 
 footer {
@@ -118,3 +138,50 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+/**modale pour lancer le jeu*/
+.modale {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #b6def9;
+}
+
+.modaleContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #84c6f3;
+	padding: 30px 20px;
+	width: 50%;
+	max-height: 100%;
+	border-radius: 14px;
+	position: relative;
+
+}
+
+.zoneOptions{
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	width: 100%;
+	height: 100px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	background-color: #8eccf5;
+	border: 2px solid #82c9f9;
+	border-radius: 50px;
+	box-shadow: 3px 10px 5px 2px rgb(44, 65, 225);
+	
+}
+
