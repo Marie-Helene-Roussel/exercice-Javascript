@@ -11,10 +11,110 @@ h6 {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
-.background_body {
-	background-color: aliceblue;
+/*Mise en forme de base*/
+body {
+	background-color: rgb(188, 222, 251);
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#title_jeu {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 2%;
+	color: #8e2ac8;
+	width: 30%;
+	height: 60px;
+	border: 1px solid #429ad5;
+	border-radius: 50px;
+	background-color: #A9CCE3;
+	box-shadow: 0px 14px 5px 1px #2a89c8;
+	transition: transform 550ms ease-in-out, background-color 400ms 150ms ease-in-out, text-decoration 300ms 400ms ease-in-out;
+
+}
+
+#title_jeu:hover {
+	transform: scale(1.20);
+	border: 1px solid #c442d5;
+	background-color: #d5a9e3;
+	color: #2a89c8;
+	box-shadow: 0px 14px 5px 1px #8e2ac8;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+#zoneJeu {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	position: relative;
+	left: 25%;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+	border: 1px solid #c442d5;
+	box-shadow: 3px 10px 5px 2px #8e2ac8;
+	margin-bottom: 20px;
+	padding-top: 9px;
+	background-color: #d5a9e3;
+	border-radius: 20px;
+}
+
+#zoneProposition {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+}
+#motPropose{
+	padding-bottom: 5px;
+	font-style: italic;
+}
+
+.title_clavier{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	text-decoration: 1px double underline #2a89c8;
+}
+.present_jeu{
+	padding: 5%;
+}
+
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
 }
