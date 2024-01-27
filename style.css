@@ -38,7 +38,7 @@ header {
   margin-top: 10px;
   margin-bottom: 100px;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 2%;
   color: #8e2ac8;
   width: 30%;
@@ -71,7 +71,8 @@ main {
 
 #zoneJeu {
   display: flex;
-  width: 50%;
+  left: 2%;
+  width: 95%;
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
