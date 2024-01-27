@@ -48,7 +48,7 @@ function lancerJeu() {
 		afficherResultat(score, i)
 		inputEcriture.value = ''
 		if (listeProposition[i] === undefined) {
-			afficherProposition("Le jeu est fini, maintenant donnez le pâtépoulet à votre potichat!!")
+			afficherProposition("Le jeu est fini, maintenant, il faut donner le pâtépoulet à votre potichat!!")
 			btnValiderMot.disabled = true
 		} else {
 			afficherProposition(listeProposition[i])
